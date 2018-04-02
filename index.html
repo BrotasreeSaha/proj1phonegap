@@ -4,8 +4,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <h1>hello phonegap from Rich Hildred</h1>
-        <h2> I can't believe it's this simple. ... </h2>
+        <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="map.html">Maps</a></li>
+                <li><a href="twitter.html">Twitter</a></li>
+        </ul>
+        <h1>Canada</h1>
+        <h2> About </h2>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+        <p>Canada is a North American country stretching from the U.S. in the south to the Arctic Circle in the north. Major cities include massive Toronto, west coast film centre Vancouver, French-speaking Montréal and Québec City, and capital city Ottawa. Canada's vast swaths of wilderness include lake-filled Banff National Park in the Rocky Mountains. It's also home to Niagara Falls, a famous group of massive waterfalls.</p>
+        </div>
+        <div class="col-md-8 col-sm-12 col-xs-12">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YQrTIC7T-mw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <div id="connectionStatus" style="color:blue">Not connected to phonegap!</div>
         <script src="cordova.js"></script>
         <script>
@@ -14,9 +24,7 @@
                 oStatus.innerHTML = "Now connected to phonegap";
                 oStatus.style.color = "green";
             }
-
             document.addEventListener("deviceready", phonegapReady, false);
-
         </script>
     </body>
 </html>
